@@ -32,7 +32,7 @@ namespace ToDoListEditor
         public List<TaskConfig> TaskConfigs = new List<TaskConfig>();
     }
 
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
     [CustomEditor(typeof(TaskListConfigObject))]
     public class TaskListConfigObjectInspector : OdinEditor
     {
@@ -87,5 +87,5 @@ namespace ToDoListEditor
             serializedObject.UpdateIfRequiredOrScript();
         }
     }
-#endif
+//#endif
 }
